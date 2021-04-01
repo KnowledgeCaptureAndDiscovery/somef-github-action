@@ -6,6 +6,9 @@ inputs:
     description: 'Codemeta file name'
     required: false
     default: 'codemeta.json'
+  repo-url:
+    description: "URL of the GitHub repository"
+    required: true
 outputs:
   file-exist: # id of output
     description: 'Flag to show whether the file exists'
