@@ -8,7 +8,7 @@ if [ -f "$1" ]
 then
   echo "Codemeta file exists. Exiting."
 else
-# #   somef configure --auto
+  somef configure --auto
 #   generation=$(somef describe --repo_url $2 --codemeta_out $1)
 #   echo "::set-output name=generation-success::$generation"
   somef describe --repo_url $2 --codemeta_out $1
