@@ -22,7 +22,21 @@ jobs:
       with:
         codemeta-file: 'test.json'
         repo-url: "https://github.com/${{ github.repository }}"
+    
+    # Create a PR 
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v3.8.2
+      with:
+        title: Generating codemeta template
+        commit-message: Add codemeta.json template
+        committer: GitHub <noreply@github.com>
+        author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
+        labels: automated pr
+        branch: add-codemeta
+        reviewers: ${{ github.repository_owner }}
       
 #     # Use the output from the `hello` step
 #     - name: Get the output time
 #       run: echo "The time was ${{ steps.hello.outputs.time }}"
+
+
