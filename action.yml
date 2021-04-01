@@ -1,16 +1,20 @@
 # action.yml
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: 'Somef GitHub action'
+description: 'A GitHub action to generate codemeta file'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
-    required: true
-    default: 'World'
+  codemeta-file:  # id of input
+    description: 'Codemeta file name'
+    required: false
+    default: 'codemeta.json'
 outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+  file-exist: # id of output
+    description: 'Flag to show whether the file exists'
+  generated-codemeta-file: # id of output
+    description: 'Name of the generated codemeta file'    
+  generation-success: # id of output
+    description: 'Whether the codemeta file was generated successfuly'        
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.who-to-greet }}
+    - ${{ inputs.codemeta-file }}
