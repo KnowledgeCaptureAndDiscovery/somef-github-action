@@ -2,15 +2,17 @@
 
 # initialize the variables
 codemeta_file=$1
-repository_url=""
+# repository_url=""
 
 # assign repo-url
-if [ $2 == "None" ] 
-then
-  repository_url="https://github.com/${{ github.repository }}"
-else
-  repository_url=$2
-fi
+# if [ $2 == "None" ] 
+# then
+#   repository_url="https://github.com/${{ github.repository }}"
+# else
+#   repository_url=$2
+# fi
+
+repository_url=$2
 
 # show inputs
 echo "Inputs:"
