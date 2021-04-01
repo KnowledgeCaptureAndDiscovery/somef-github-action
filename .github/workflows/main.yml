@@ -36,7 +36,7 @@ jobs:
         author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
         labels: automated pr
         branch: add-codemeta
-        reviewers: ${{ github.repository_owner }}
+        # reviewers: ${{ github.repository_owner }} ## Ideally we would add a reviewer.
       
 #     # Use the output from the `hello` step
 #     - name: Get the output time
