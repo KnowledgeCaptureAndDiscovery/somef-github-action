@@ -3,7 +3,7 @@
 echo "Inputs:"
 echo "  codemeta-file: $1"
 echo "  repository: $2"
-echo "repo env$GITHUB_REPOSITORY"
+echo "repoenv: $GITHUB_REPOSITORY"
 
 if [ -f "$1" ]
 then
