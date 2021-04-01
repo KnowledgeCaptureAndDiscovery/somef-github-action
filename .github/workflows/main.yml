@@ -5,7 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     name: Test somef
     steps:
-    
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - name: Chechout repo
+      uses: actions/checkout@v2
+
     #- name: Somef without inputs
     #  id: test1
     #  uses: KnowledgeCaptureAndDiscovery/somef-github-action@main
