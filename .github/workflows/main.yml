@@ -6,14 +6,18 @@ jobs:
     name: Test somef
     steps:
     
-    - name: Somef without input
+    - name: Somef without inputs
       id: test1
+      uses: fdiblen/somef-github-action@main
+        
+    - name: Somef with repo-url input
+      id: test2
       uses: fdiblen/somef-github-action@main
       with:
         repo-url: "https://github.com/${{ github.repository }}"
 
-    - name: somef with input
-      id: test2
+    - name: somef with codemeta-file and repo-url inputs 
+      id: test3
       uses: fdiblen/somef-github-action@main
       with:
         codemeta-file: 'test.json'
