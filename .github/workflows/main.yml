@@ -8,21 +8,21 @@ jobs:
     
     - name: Somef without inputs
       id: test1
-      uses: fdiblen/somef-github-action@main
+      uses: KnowledgeCaptureAndDiscovery/somef-github-action@main
         
     - name: Somef with repo-url input
       id: test2
-      uses: fdiblen/somef-github-action@main
+      uses: KnowledgeCaptureAndDiscovery/somef-github-action@main
       with:
         repo-url: "https://github.com/${{ github.repository }}"
 
     - name: somef with codemeta-file and repo-url inputs 
       id: test3
-      uses: fdiblen/somef-github-action@main
+      uses: KnowledgeCaptureAndDiscovery/somef-github-action@main
       with:
         codemeta-file: 'test.json'
         repo-url: "https://github.com/${{ github.repository }}"
-        
+      
 #     # Use the output from the `hello` step
 #     - name: Get the output time
 #       run: echo "The time was ${{ steps.hello.outputs.time }}"
