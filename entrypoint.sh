@@ -4,6 +4,8 @@
 codemeta_file=$1
 # repository_url=""
 
+echo $2
+
 # assign repo-url
 if [ $2 == "None" ] 
 then
