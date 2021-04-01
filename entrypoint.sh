@@ -5,7 +5,7 @@ codemeta_file=$1
 repository_url=""
 
 # assign repo-url
-if [ $2 -eq "None" ] 
+if [ $2 == "None" ] 
 then
   repository_url="https://github.com/${{ $GITHUB_REPOSITORY }}"
 else
