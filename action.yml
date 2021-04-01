@@ -8,7 +8,7 @@ inputs:
     default: 'codemeta.json'
   repo-url:
     description: "URL of the GitHub repository"
-    required: true
+    required: false
     default: 'None'
 outputs:
   file-exist: # id of output
