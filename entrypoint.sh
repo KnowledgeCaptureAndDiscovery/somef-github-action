@@ -1,4 +1,4 @@
-#!/bin/sh -l
+#!/bin/bash 
 
 # initialize the variables
 codemeta_file=$1
