@@ -7,7 +7,7 @@ repository_url=""
 # assign repo-url
 if [ $2 == "None" ] 
 then
-  repository_url="https://github.com/${{ $GITHUB_REPOSITORY }}"
+  repository_url="https://github.com/${{ github.repository }}"
 else
   repository_url=$2
 fi
