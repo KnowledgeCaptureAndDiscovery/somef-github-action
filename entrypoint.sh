@@ -8,6 +8,7 @@ codemeta_file=$1
 if [ $2 == "None" ] 
 then
   repository_url="https://github.com/${GITHUB_REPOSITORY}"
+  echo $repository_url
 else
   repository_url=$2
 fi
