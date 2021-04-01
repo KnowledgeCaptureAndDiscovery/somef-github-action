@@ -4,8 +4,6 @@
 codemeta_file=$1
 # repository_url=""
 
-echo $2
-
 # assign repo-url
 if [ $2 == "None" ] 
 then
@@ -14,10 +12,9 @@ else
   repository_url=$2
 fi
 
-echo $repository_url
-
 # show inputs
 echo "Inputs:"
+echo "  Input 2: $2"
 echo "  codemeta-file: $codemeta_file"
 echo "  repository: $repository_url"
 
