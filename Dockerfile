@@ -1,5 +1,5 @@
 
-FROM alpine:3.10
+FROM kcapd/somef:latest
 
 COPY entrypoint.sh /entrypoint.sh
 
