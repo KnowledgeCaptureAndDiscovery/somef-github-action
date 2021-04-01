@@ -13,7 +13,6 @@ echo "Inputs:"
 echo "  codemeta-file: $codemeta_file"
 echo "  repository: $repository_url"
 
-echo "repoenv: "
 
 if [ -f "$1" ]
 then
