@@ -9,6 +9,7 @@ inputs:
   repo-url:
     description: "URL of the GitHub repository"
     required: true
+    default: 'None'
 outputs:
   file-exist: # id of output
     description: 'Flag to show whether the file exists'
