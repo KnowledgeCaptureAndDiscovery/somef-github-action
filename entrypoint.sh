@@ -1,21 +1,23 @@
 #!/bin/sh -l
 
+# initialize the variables
 codemeta_file=$1
+repository_url=""
 
-if [ $2 == "None" ]
-then
+# assign repo-url
+if [ $2 == "None" ]; then
   repository_url="https://github.com/${{ $GITHUB_REPOSITORY }}"
 else
   repository_url=$2
 fi
 
+# show inputs
 echo "Inputs:"
 echo "  codemeta-file: $codemeta_file"
 echo "  repository: $repository_url"
 
-
-if [ -f "$1" ]
-then
+# check codemeta file
+if [ -f "$codemeta_file" ]; then
   echo "Codemeta file exists. Exiting."
 else
   somef configure --auto
