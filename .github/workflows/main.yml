@@ -6,9 +6,9 @@ jobs:
     name: Test somef
     steps:
     
-    #- name: Somef without inputs
-    #  id: test1
-    #  uses: KnowledgeCaptureAndDiscovery/somef-github-action@main
+    - name: Somef without inputs
+      id: test1
+      uses: KnowledgeCaptureAndDiscovery/somef-github-action@main
         
     - name: Somef with repo-url input
       id: test2
